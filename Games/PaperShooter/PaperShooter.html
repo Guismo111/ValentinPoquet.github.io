@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="PaperShooter.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="PaperShooter.js" defer></script>
+    </head>
+    <body>
+        <div class="top_banner">
+            <h1 class="top_banner_text">Valentin POQUET</h1>
+            <a href="../../index.html" class="top_banner_link"><div class="top_banner_text_link">Portfolio</div></a>
+        </div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="gameBg.png" alt="papershooter">
+        </div>
+        <div class="game_desc">
+            <h1 class="game_title">Paper Shooter</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Godot 3.5, Visual Studio</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage Utilisé</strong></td>
+                        <td class="skill_right_text">C#</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">Dec. 2022 - Jan. 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Paper Shooter est le premier jeu que j'ai réalisé à l'université en première année. Il s'agit d'un Shoot'em up et on m'a attribué le thème "enfantin", je devais donc rendre le jeu enfantin. 
+                Je n'étais pas le seul à travailler sur ce jeu, il y avait aussi deux sound designer qui ont fait la musique et les effets sonores.
+            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Outil d'arrondissage de polygones 2D</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            J'avais comme contrainte de n'utiliser que des polygones 2D et non des logiciels tiers pour faire les assets graphiques.
+                            J'ai donc programmé un algorithme et un outil qui me permet d'arrondir un polygone 2D de n'importe quelle forme à l'intérieur de Godot.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="2"><strong>Dessin</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="2">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai programmé une fonctionnalité qui permet au joueur de dessiner sur l'écran en utilisant un stylo dans le jeu qui serait contrôlé par lui-meme. 
+                            Le dessin est réalisé à l'aide du nœud godot polygone 2d. Il peut ouvrir des portes si le dessin touche en même temps les boutons connectés d'une porte.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>Level Design</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai créé tout le level design du jeu. Le jeu devait durer au moins 2,5 minutes et comporter un boss final en 3 phases. 
+                            Le boss change graphiquement et génère des obstacles et des ennemis dans chaque phase.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="4"><strong>Traduction</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="4">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai implémenté et programmé un système de traductin dans le jeu afin qu'il puisse être joué en anglais et en français.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="5"><strong>Musique & système de son</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai programmé un système musical qui change la musique du jeu selon que si le joueur affronte le boss final s'il est dans le jeu principal, ou dans l'écran principale. 
+                            Le système musical peut également jouer de la musique d'ambiance en plus de la musique. 
+                            J'ai également créé un système d'effets sonores qui joue certains sons lorsque le joueur fait certaines actions comme tirer, dessiner ou lorsqu'un ennemi meurt.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/W0S2XhEMdTk" frameborder="0" class="GameplayVideo"></iframe>
+            <!--<video controls="" muted="" playsinline="" autoplay="" width="960" height="540" class="GameplayVideo">
+                <source src="walkthrough.mp4" type="video/mp4">
+            </video>-->
+        </p>
+        <div class="bottom_space"></div>
+    </body>
+</html>

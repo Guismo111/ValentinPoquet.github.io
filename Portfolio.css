@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Insanibu';
+    src: url('fonts/Insanibu.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jellee Roman';
+    src: url('fonts/jellee.roman.ttf') format('truetype');
+}
+
+body{
+    background: #16161B;
+    margin: 0 0 0 0;
+    height: 100%;
+    width: 100%;
+
+    /*fonts related*/
+    color: white;
+    font-family: "fonts/jellee.roman.ttf", sans-serif;
+}
+
+.primary_color{
+    color: #70C0D2;
+}
+
+.secondary_color{
+    color: #CFCFB0;
+}
+
+.accent_color{
+    color: #1D5767;
+}
+
+.top_banner{
+    display: flex;
+    background-color: #21212C;
+    height: 11vh;
+    width: 100%;
+    margin-top: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    box-shadow: 0 1.5vh 2vh rgba(0, 0, 0, 0.3);
+}
+
+.top_banner_text{
+    display: flex;
+    font-size: 5vh;
+    align-items: center;
+    padding-left: 5%;
+
+    font-family: "Jellee Roman", sans-serif; /*Jellee Roman or Insanibu*/
+    letter-spacing: .35vh;
+}
+
+.top_banner_link{
+    display: flex;
+
+    margin-right: 5%;
+    margin-left: auto;
+    align-items: center;
+
+    /*font-family: "Jellee Roman", sans-serif;*/
+    text-decoration-color: rgba(255, 255, 255, 0);
+    transition: text-decoration-color 0.3s ease;
+}
+
+.top_banner_link:hover{
+    text-decoration-color: white;
+}
+
+.top_banner_text_link{
+    font-size: 5vh;
+    color: white;
+    letter-spacing: .1vh;
+}
+
+.main_title{
+    text-align: center;
+    margin: 25vh 0 14vh 0;
+    font-size: 10vh;
+}
+
+.section_banner{
+    background-color: #21212C;
+    height: 14vh;
+    width: auto;
+}
+
+.section_title{
+    display: grid;
+
+    width: auto;
+    height: 100%;
+
+    text-align: center;
+    align-items: center;
+    
+    font-size: 8vh;
+}
+
+.bottom_space{
+    margin-bottom: 3%;
+}
