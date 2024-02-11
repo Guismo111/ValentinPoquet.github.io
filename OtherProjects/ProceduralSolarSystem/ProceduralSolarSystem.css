@@ -1,0 +1,46 @@
+.TopSpace{
+    height: 11vh;
+}
+
+.sebastian_lague_link{
+    color: rgb(0, 83, 216);
+}
+
+.sebastian_lague_link:hover{
+    color: rgb(26, 114, 255);
+}
+
+.ImgShaderContainer{
+    align-items: center;
+    text-align: center;
+}
+
+.ImgShaderAccordion{
+    text-align: center;
+    align-items: center;
+    
+    width: 40vh; 
+    height: auto;
+
+    border-radius: 2.5vh;
+}
+
+.ImgMeshAccordion{
+    text-align: center;
+    align-items: center;
+    
+    width: 40vh; 
+    height: auto;
+
+    border-radius: 2.5vh;
+}
+
+.ImgCraterAccordion{
+    text-align: center;
+    align-items: center;
+    
+    width: 60vh; 
+    height: auto;
+
+    border-radius: 2.5vh;
+}

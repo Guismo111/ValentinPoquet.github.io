@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="ProceduralSolarSystem.css">
+        <link rel="stylesheet" href="../../Games/Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="ProceduralSolarSystem.js" defer></script>
+    </head>
+    <body>
+        <div class="top_banner">
+            <h1 class="top_banner_text">Valentin POQUET</h1>
+            <a href="../../index.html" class="top_banner_link"><div class="top_banner_text_link">Portfolio</div></a>
+        </div>
+        <!--<div class="game_bg">
+            <img class="img_game_bg" src="gameBg.png" alt="atomFusion">
+        </div>-->
+        <div class="TopSpace"></div>
+        <div class="game_desc">
+            <h1 class="game_title">Sytème solaire procédural (WIP)</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Personnel</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Unity, Visual Studio Code, Git</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langages utilisés</strong></td>
+                        <td class="skill_right_text">C#, HLSL</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">Décembre 2023 - ...</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Ce projet est une génération d'un système solaire procédural où chaque planètes et lunes sont généré aléatoirement ainsi que le nombre de planètes et lunes. 
+                Ce projet me permet d'apprendre de nouvelles compétences telle que les shaders et compute shader et est inspiré d'une vidéo de <a href="https://www.youtube.com/watch?v=lctXaT9pxA0" target="_blank" class="sebastian_lague_link">Sebastian Lague</a>.
+            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Shader</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai fait toutes les couleurs de la lune en utilisant un shader. 
+                            J'ai utilisé un perlin noise que j'ai converti en fractale noise pour avoir 2 couleurs différentes sur la lune. 
+                            J'ai aussi fait en sorte que l'une des couleurs soit aussi un fractale noise avec de la distorsion pour avoir un mix de couleurs.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgShaderAccordion" src="moon0.png" alt="moon0">
+                                <img class="ImgShaderAccordion" src="moon1.png" alt="moon1">
+                                <img class="ImgShaderAccordion" src="moon2.png" alt="moon2">
+                                <img class="ImgShaderAccordion" src="moon4.png" alt="moon4">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>Géneration de la sphère</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai créé la sphère de base de la lune par script en ayant pour forme de base un diamant en 3D où j'ai ensuite subdivisé chaque triangle du diamant en plusieurs petits triangles, puis chaque points de la sphère et ensuite placé à une distance de 1 du centre.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgMeshAccordion" src="mesh0Subd.png" alt="MeshLow">
+                                <img class="ImgMeshAccordion" src="MeshLotSubd.png" alt="MeshHigh">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="4"><strong>Cratères génération</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="4">
+                    <div class="content">
+                        <div class="content_text">
+                            Chaque cratère de la lune est placé à une position aléatoire. 
+                            La forme du cratère dépend d'une formule en fonction de la distance de chaque point de la sphère comparé a la position de chaque cratères, et le résultat de cette formule est appliqué à la distance du point par rapport au centre de la sphère.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgCraterAccordion" src="CraterFormula.png" alt="CraterFormula">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="5"><strong>Lune forme noise</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai ajouté en plus des cratères plusieurs fractales noises d'une taille différente sur la forme de la lune. 
+                            J'ai aussi rajouté ridged noise sur la lune pour rajouter plus de détails.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="second"><strong>Compute Shader</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="second">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai généré la forme de la lune en utilisant un compute shader pour raison d'optimisation. 
+                            Je crée donc un compute buffer en Read-Write pour les vertices et qui va donc changer la position de chaque vertex. 
+                            Je crée aussi un compute buffer qui contient la position et taille de chaque cratère, et un pour chaque noise que j'utilise.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="6"><strong>Fond étoilé</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="6">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai créé un système qui place un certain nombre de sphères lumineuses à une position aléatoire à une certaine distance du centre et avec une couleur aléatoire parmi un gradient de couleurs prédéfinies, ce qui crée donc un dôme d'étoiles et qui ressemble à un fond étoilé vu depuis le centre.                        
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom_space"></div>
+    </body>
+</html>
