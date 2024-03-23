@@ -1,0 +1,65 @@
+@import '../../Portfolio.css';
+
+.Img80{
+    text-align: center;
+    align-items: center;
+    
+    width: 80vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img50{
+    text-align: center;
+    align-items: center;
+    
+    width: 50vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img35{
+    text-align: center;
+    align-items: center;
+    
+    width: 35vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img30{
+    text-align: center;
+    align-items: center;
+    
+    width: 30vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img25{
+    text-align: center;
+    align-items: center;
+    
+    width: 20vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img20{
+    text-align: center;
+    align-items: center;
+    
+    width: 20vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.InsideAccordionText{
+    font-size: 2.65vh;
+}

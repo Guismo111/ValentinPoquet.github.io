@@ -122,3 +122,8 @@
 .GameplayVideo{
     border-radius: 2vh;
 }
+
+.ImgShaderContainer{
+    align-items: center;
+    text-align: center;
+}
