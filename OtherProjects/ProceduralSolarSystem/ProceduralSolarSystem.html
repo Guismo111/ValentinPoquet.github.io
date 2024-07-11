@@ -18,7 +18,7 @@
         </div>-->
         <div class="TopSpace"></div>
         <div class="game_desc">
-            <h1 class="game_title">Sytème solaire procédural (WIP)</h1>
+            <h1 class="game_title">Sytème solaire procédural</h1>
             <table class="skills_table">
                 <tbody>
                     <tr>
@@ -35,7 +35,7 @@
                     </tr>
                     <tr>
                         <td class="skill_left_text"><strong>Période</strong></td>
-                        <td class="skill_right_text">Décembre 2023 - ...</td>
+                        <td class="skill_right_text">Décembre 2023 - Mars 2024</td>
                     </tr>
                 </tbody>
             </table>
@@ -110,11 +110,11 @@
             </ul>
             <ul id="accordion">
                 <li>
-                    <label for="second"><strong>Compute Shader</strong><span>+</span></label>
-                    <input type="checkbox" name="accordion" id="second">
+                    <label for="6"><strong>Compute Shader</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="6">
                     <div class="content">
                         <div class="content_text">
-                            J'ai généré la forme de la lune en utilisant un compute shader pour raison d'optimisation. 
+                            J'ai généré la forme de la lune en utilisant un compute shader pour des raisons d'optimisation. 
                             Je crée donc un compute buffer en Read-Write pour les vertices et qui va donc changer la position de chaque vertex. 
                             Je crée aussi un compute buffer qui contient la position et taille de chaque cratère, et un pour chaque noise que j'utilise.
                         </div>
@@ -123,16 +123,36 @@
             </ul>
             <ul id="accordion">
                 <li>
-                    <label for="6"><strong>Fond étoilé</strong><span>+</span></label>
-                    <input type="checkbox" name="accordion" id="6">
+                    <label for="7"><strong>Génération de la planète</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="7">
                     <div class="content">
                         <div class="content_text">
-                            J'ai créé un système qui place un certain nombre de sphères lumineuses à une position aléatoire à une certaine distance du centre et avec une couleur aléatoire parmi un gradient de couleurs prédéfinies, ce qui crée donc un dôme d'étoiles et qui ressemble à un fond étoilé vu depuis le centre.                        
+                            La forme de base de la planète commence de la même façon que les lunes mais avec beaucoup moins de cratères.
+                            Par code je crée ensuite des montagnes procéduralement et j'ajoute des creux qui vont permettre à l'océan de s'afficher.
+                            Ensuite pour la couleur je crée un shader et en fonction de la hauteur et de la pente du terrain la couleur varie, 
+                            mais j'applique aussi un noise texture pour faire varier la couleur à certains endroits.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="8"><strong>Océans</strong><span>+</span></label>
+                    <input type="checkbox" name="accordion" id="8">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai généré les océans des planètes grace à des shaders en utilisant du poste.
+                            Chaque planète possède un océan et chaque océan change de couleur procéduralement.
+                            La façon dont marche l'eau est que pour chaque pixel de l'écran, un ray est envoyé pour calculer la distance qu'il parcourt à travers l'eau, 
+                            et plus la distance est longue, moins la transparence est élevée.
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/9OgbKgKhzMI" frameborder="0" class="GameplayVideo"></iframe>
+        </p>
         <div class="bottom_space"></div>
     </body>
 </html>
