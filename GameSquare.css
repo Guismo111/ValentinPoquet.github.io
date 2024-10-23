@@ -78,7 +78,7 @@
 }
 
 .work_tags_container{
-    margin-top: 1vh;
+    margin-top: .75vh;
     width: 100%;
     text-align: left;
     overflow: hidden;
@@ -88,8 +88,8 @@
 .work_tag{
     height: 3vh;
     
-    padding-left: 1.1vh;
-    padding-right: 1.1vh;
+    padding-left: 1.0vh;
+    padding-right: 1.0vh;
     padding-top: .5vh;
 
     color: white;
