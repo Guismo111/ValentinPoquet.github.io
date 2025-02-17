@@ -1,0 +1,49 @@
+@import '../../Portfolio.css';
+
+.ImgContainer{
+    text-align: center;
+    align-items: center;
+    
+    width: auto; 
+    height: auto;
+}
+
+.Img30{
+    text-align: center;
+    align-items: center;
+    
+    width: 30vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img40{
+    text-align: center;
+    align-items: center;
+    
+    width: 40vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img50{
+    text-align: center;
+    align-items: center;
+    
+    width: 50vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img60{
+    text-align: center;
+    align-items: center;
+    
+    width: 60vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
