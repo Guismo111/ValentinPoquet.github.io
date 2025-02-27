@@ -1,0 +1,38 @@
+@import '../../Portfolio.css';
+
+.img_accordion{
+    text-align: center;
+    
+    width: 55vh; 
+    height: auto;
+}
+
+.ImgAccordion0{
+    text-align: center;
+    align-items: center;
+    
+    width: 45vh; 
+    height: auto;
+
+    border-radius: 2.5vh;
+}
+
+.ImgAccordion1{
+    text-align: center;
+    align-items: center;
+    
+    width: 65vh; 
+    height: auto;
+
+    border-radius: 2.5vh;
+}
+
+.ImgAccordion2{
+    text-align: center;
+    align-items: center;
+    
+    width: 90vh; 
+    height: auto;
+
+    border-radius: 2.5vh;
+}

@@ -173,9 +173,18 @@ body{
 
 .Mail-Logo {
     margin-top: 3vh;
-    margin-right: 1vh;
+    margin-right: 0vh;
 
     max-width: 80%;
     max-height: 80%;
+    object-fit: contain;
+}
+
+.Github-Logo {
+    margin-top: 2vh;
+    margin-right: 2vh;
+
+    max-width: 80%;
+    max-height: 90%;
     object-fit: contain;
 }

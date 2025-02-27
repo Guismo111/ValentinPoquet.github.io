@@ -13,8 +13,8 @@
 .square {
     width: 40vh;
     height: 40vh;
-    margin: 3vh;
-    margin-bottom: 10vh;
+    margin: 5vh;
+    margin-bottom: 12vh;
 
     transition: box-shadow 0.5s ease;
     transition: border 0.5s ease;
@@ -78,7 +78,7 @@
 }
 
 .work_tags_container{
-    margin-top: .75vh;
+    margin-top: 1.25vh;
     width: 100%;
     text-align: left;
     overflow: hidden;
@@ -100,8 +100,8 @@
     float: left;
 
     margin-right: .75vh;
-    margin-top: .75vh;
-    margin-bottom: .75vh;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
 
     text-align: center;
     border-radius: .8vh;
