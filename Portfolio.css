@@ -188,3 +188,83 @@ body{
     max-height: 90%;
     object-fit: contain;
 }
+
+.Img80{
+    text-align: center;
+    align-items: center;
+    
+    width: 80vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img65{
+    text-align: center;
+    align-items: center;
+    
+    width: 65vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img50{
+    text-align: center;
+    align-items: center;
+    
+    width: 50vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img45{
+    text-align: center;
+    align-items: center;
+    
+    width: 45vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img35{
+    text-align: center;
+    align-items: center;
+    
+    width: 35vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img30{
+    text-align: center;
+    align-items: center;
+    
+    width: 30vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img25{
+    text-align: center;
+    align-items: center;
+    
+    width: 20vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}
+
+.Img20{
+    text-align: center;
+    align-items: center;
+    
+    width: 20vh; 
+    height: auto;
+
+    border-radius: 2.0vh;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="UnseelieCourt.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="UnseelieCourt.js" defer></script>
+    </head>
+    <body>
+        <div class="top_banner">
+            <h1 class="top_banner_text">Valentin POQUET</h1>
+            <a href="../../index.html" class="top_banner_link"><div class="top_banner_text_link">Portfolio</div></a>
+        </div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="Images/UnseelieCourtLargeImage.png" alt="Background">
+        </div>
+        <!--<div class="TopSpace"></div>-->
+        <div class="game_desc">
+            <h1 class="game_title">Unseelie Court</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Unreal Engine 5, P4V</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage Utilisé</strong></td>
+                        <td class="skill_right_text">Blueprint</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">1,5 mois de Mai à Juin 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Unseelie Court est un jeu de puzzle dans lequel le joueur voyage dans un monde où le temps est inversé: la cour Unseelie.
+                Le personnage, ayant détruit un artefact celte, a fait tomber sur son village une malédiction qui a pétrifié tous les villageois.
+                Afin de les sauver, l'héroïne doit trouver trois artefacts celtes pour lever la malédiction.
+                Ce projet a été réalisé sur Unreal Engine 5 en un mois et demi, et nous étions une équipe de 5 game designers & programmers, 6 game designers, 3 game programmers, 2 sound designers et 9 game artists.            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="0b"><strong>Rewind</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="0b">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé le système de rewind de notre jeu.
+                            Lorsque le joueur interagit avec un totem, le jeu va commencer à enregistrer chaque position et rotation de certains types d'objets qui sont prévus à remonter dans le temps.
+                            Et une fois que le timer est fini, disons au bout de 10 secondes, tous les objets qui ont eu leurs positions et rotations enregistrées vont retracer leur chemin à l'envers, et à ce moment-là le joueur ne pourra pas interagir avec ces éléments.                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img50" src="Gifs/rewindMechanic.gif" alt="TurnstileGif">
+                            </div><br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="0"><strong>Box Movement</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="0">
+                    <div class="content">
+                        <div class="content_text">
+                            Je me suis occupé d'une des mécaniques principales du jeu, qui est de pouvoir pousser des boîtes.
+                            Les boîtes peuvent aussi tomber lorsqu'il y a un trou en dessous, et elles peuvent être empilées.
+                            Ces boîtes suivent aussi la mécanique de remontée dans le temps, donc quand le temps est remonté, la boîte suit à l'envers ses anciennes positions. Dans cette phase, le joueur ne peut pas interagir avec ces boîtes, mais peut monter dessus.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img45" src="Gifs/box_push.gif" alt="box_push">
+                                <img class="Img45" src="Gifs/box_stack_fall.gif" alt="box_stack_fall">
+                            </div><br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Balancoire</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            Nous avions comme mécanique d'avoir une balance avec laquelle le joueur peut interagir. Si le joueur va d’un côté de la balance, elle va bouger, et s’il va de l’autre côté, elle penche de l’autre côté.
+                            Je me suis occupé de refaire la physique de la balance : plus le joueur est loin du centre de la balance, plus celle-ci va pencher.
+                            J'ai dû aussi faire en sorte que, si une boîte est poussée et tombe sur la balance, la boîte soit ensuite "accrochée" à la balance et penche la balance de l'autre côté. Et si une autre boîte est accrochée de l'autre côté, ou si un joueur est présent, le joueur ou la boîte est éjecté dans les airs.
+                            La balance suit aussi le remontage dans le temps et ne peut pas être interagit avec pendant ce moment.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img45" src="Gifs/balance.gif" alt="balance">
+                                <img class="Img45" src="Gifs/balance_box.gif" alt="balance_box">
+                            </div><br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="1_b"><strong>Porte tombante</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="1_b">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé un système de porte qui peut tomber, et lorsque l'on remonte dans le temps, la porte peut éjecter le joueur.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img50" src="Gifs/gate.gif" alt="gate">
+                            </div><br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="1_c"><strong>Spline building Tool</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="1_c">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai développé un tool qui permet de placer des meshes sur une spline, mais la distance entre chaque mesh change en fonction de la taille du mesh précédent.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="5"><strong>Eject actor component</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé un component qui peut être ajouté à n'importe quel actor, mais qui est utilisé dans notre jeu pour la balance et la porte.
+                            Il permet d'éjecter n'importe quel actor à un moment donné et à une position donnée.
+                            On peut aussi choisir la hauteur de l'éjection pour plus de modularité.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img65" src="Images/balanceEject.png" alt="balanceEject">
+                            </div><br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/hk353Cy4Huw" frameborder="0" class="GameplayVideo"></iframe>
+            <!--<video controls="" muted="" playsinline="" autoplay="" width="960" height="540" class="GameplayVideo">
+                <source src="03_walkthrough.mp4" type="video/mp4">
+            </video>-->
+        </p>
+        <div class="bottom_space"></div>
+        <!--Bottom line-->
+        <div class="section_banner">
+            <div class="logo-container">
+                <a href="mailto:poquet.valentin91@gmail.com">
+                    <img class="Mail-Logo" src="../../Logos/Mail_Logo.png" alt="Mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/valentin-poquet-319005265/" target=”_blank”>
+                    <img class="logo" src="../../Logos/LinkedIn_Logo.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/Guismo111" target=”_blank”>
+                    <img class="Github-Logo" src="../../Logos/Github_Logo.png" alt="Github" />
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
