@@ -18,3 +18,18 @@
     // Find a place to insert the banner (like the top of the body)
     document.body.insertAdjacentHTML("afterbegin", bannerHTML);
 });*/
+
+document.querySelectorAll('.square').forEach(square => {
+    const video = square.querySelector('.square-video');
+    if (!video) return;
+
+    square.addEventListener('mouseenter', () => {
+        video.currentTime = 0;
+        video.play();
+    });
+
+    square.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
