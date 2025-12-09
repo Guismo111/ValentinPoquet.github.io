@@ -290,3 +290,85 @@ body{
 
     font-family: "Fonts/jellee.roman.ttf", sans-serif;
 }
+
+.video_bg {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.video_game_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire container, maintaining its aspect ratio */
+}
+
+.main_title_video {
+    position: absolute;
+    top: 28%;   
+    left: 5%;
+    color: white;
+    font-size: 15vh;
+    font-family: "Cute Dino", sans-serif;
+    text-shadow: 1vh 1vh 0px #000000;
+}
+
+.Job-Description_video {
+    position: absolute;
+    top: 47%; 
+    left: 5%;
+    color: white;
+    font-size: 7vh;
+    text-shadow: 0 0 2vh black; 
+    font-family: "Jellee Roman", sans-serif;
+}
+
+.emailAdress_video {
+    position: absolute;
+    top: 58%;
+    left: 5%;
+    color: white;
+    font-size: 3vh;
+    text-shadow: 0 0 2vh black;
+    font-family: "Jellee Roman", sans-serif;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.Mail-Logo_top {
+    margin-top: 2vh;
+    margin-right: 2vh;
+    margin-left: 3vh;
+
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+.Github-Logo_top {
+    margin-top: 1.5vh;
+    margin-right: 2vh;
+    margin-left: -1vh;
+
+    max-width: 80%;
+    max-height: 75%;
+    object-fit: contain;
+}
+
+.LinkedIn-Logo_top {
+    margin-top: .7vh;
+    margin-right: 2vh;
+
+    max-width: 80%;
+    max-height: 85%;
+    object-fit: contain;
+}

@@ -3,7 +3,7 @@
 .squares_container{
     width: 80%;
     height: auto;
-    margin: 5vh auto 0vh auto;
+    margin: 1vh auto 3vh auto;
     
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +111,6 @@
     font-size: 3.5vh;
 }
 
-/*video*/
 
 .square-video {
     position: absolute;
@@ -122,10 +121,9 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 
-    pointer-events: none; /* pour garder le hover sur la square */
+    pointer-events: none;
 }
 
-/* Au hover: afficher la vidéo + masquer l'image */
 .square:hover .square-video {
     opacity: 1;
 }
