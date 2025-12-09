@@ -133,7 +133,7 @@ body{
 }
 
 .space_professionel{
-    margin: 3vh 0 0 0;
+    margin: 4vh 0 0 0;
 }
 
 .tag-code {
@@ -181,6 +181,15 @@ body{
 }
 
 .Github-Logo {
+    margin-top: 2vh;
+    margin-right: 2vh;
+
+    max-width: 80%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.Instagram-Logo {
     margin-top: 2vh;
     margin-right: 2vh;
 
@@ -267,4 +276,17 @@ body{
     height: auto;
 
     border-radius: 2.0vh;
+}
+
+.myDescription{
+    margin-top: -5vh;
+    margin-right: 50vh;
+    margin-left: 50vh;
+    margin-bottom: 2vh;
+
+    text-align: middle;
+
+    font-size: 3.0vh;
+
+    font-family: "Fonts/jellee.roman.ttf", sans-serif;
 }
