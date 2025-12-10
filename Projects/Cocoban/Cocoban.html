@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="Cocoban.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="Cocoban.js" defer></script>
+        <script src="../../GlobalFiles/TopBannerProject.js" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="gameBg.png" alt="Cocoban">
+        </div>
+        <div class="game_desc">
+            <h1 class="game_title">Cocoban</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Godot 3.5, Visual Studio, Git, Krita</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage Utilisé</strong></td>
+                        <td class="skill_right_text">C#</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">Fev. 2023 - Mai 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Ce projet était une reproduction d'un mécanisme de jeu appelé Sokoban qui est un type de jeu de puzzle où le joueur doit pousser des boîtes vers une cible, mais les boîtes ne peuvent pas passer à travers d'autres boîtes et peuvent uniquement être poussées. 
+                Mais en plus de refaire le mécanisme de base, nous avons ajouté une caractéristique spéciale qui est un portail mobile qui peut téléporter le joueur sur un axe horizontal ou vertical le long du portail. 
+                Ce jeu a été réalisé pendant ma première année dans mon université et nous étions une équipe de 5 game designer & programmer.
+            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Assets</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai créé la majorité des assets dans Krita et c'est moi qui ai conçu le coq avec lequel le joueur joue.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="2"><strong>Level Design</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="2">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai crée 2 niveaux et chacun a au moins un téléporteur et est de taille 9*9.<br>
+                            <br>
+                            Mon niveau de difficulté moyenne:<br>
+                            <img class="img_accordion" src="levelMedium.png" alt="LevelMedium">
+                            <br><br>
+                            Mon niveau de difficulté difficile:<br>
+                            <img class="img_accordion" src="levelHard.png" alt="LevelHard">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>Pathfinding</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai programmé un système de pathfinding de sorte que si le joueur veut aller à un certain endroit sans avoir à appuyer sur les touches droite et gauche un grand nombre de fois, il peut simplement cliquer à l'endroit où il veut que le coq se déplace et il se déplace alors automatiquement.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="4"><strong>Mouvement</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="4">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai programmé tous les mouvements des joueurs sans utiliser le système de collision de Godot mais en faisant tout en logique en utilisant une grille virtuelle en 2d.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="5"><strong>Animation de début de niveau</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai programmé par code l'animation des tuiles du niveau lorsque le joueur entre dans un niveau. J'ai utilisé une fonction sinusoïdale pour avoir une animation ondulée.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/wxearN9g0Bo?autoplay=1&mute=1&loop=1&playlist=wxearN9g0Bo" frameborder="0" class="GameplayVideo"></iframe>
+            <!--<video controls="" muted="" playsinline="" autoplay="" width="960" height="540" class="GameplayVideo">
+                <source src="03_walkthrough.mp4" type="video/mp4">
+            </video>-->
+        </p>
+        <div class="bottom_space"></div>
+    </body>
+</html>

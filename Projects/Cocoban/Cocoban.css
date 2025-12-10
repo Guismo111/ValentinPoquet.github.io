@@ -1,0 +1,8 @@
+@import '../../Portfolio.css';
+
+.img_accordion{
+    text-align: center;
+    
+    width: 55vh; 
+    height: auto;
+}

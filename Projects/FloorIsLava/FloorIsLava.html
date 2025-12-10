@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="FloorIsLava.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="FloorIsLava.js" defer></script>
+        <script src="../../GlobalFiles/TopBannerProject.js" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="Images/Background.png" alt="Background">
+        </div>
+        <div class="game_desc">
+            <h1 class="game_title">Floor Is Lava</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Unreal Engine 5, P4V</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage Utilisé</strong></td>
+                        <td class="skill_right_text">Blueprint</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">2,5 mois en fin 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Ce projet est le premier jeu que j'ai réalisé sur Unreal Engine 5. Il avait pour objectif de nous apprendre à utiliser le moteur ainsi que Perforce.
+                <br>Le but était de concevoir un jeu de plateforme 3D avec de la lave entourant les plateformes. Je devais également recoder des IA, ajoutant ainsi un aspect d'infiltration au gameplay.            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="0"><strong>Character Movement</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="0">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû recoder le mouvement de la caméra ainsi que le déplacement du joueur.
+                            <br>J'ai également implémenté les mécaniques de saut, d'accroupissement et de course.
+                            <br>En plus, j'ai ajouté la possibilité de glisser sur le sol: si le joueur s'accroupit en courant, il bénéficie d'un boost de vitesse et la caméra se rapproche du sol pour renforcer l'effet.
+                            <br>J'ai aussi développé un système de glissade sur les murs, réduisant l'influence de la gravité. Lorsqu'il est accroché à un mur, le joueur peut également effectuer un wall jump.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/Movement.gif" alt="Projectile">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="0b"><strong>Firing</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="0b">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû recoder un système de tir, permettant au joueur de tirer des projectiles. 
+                            <br>Lorsqu'un projectile touche une surface il émet un son qui peut être perçu par les ennemis.
+                            <br>Cependant, j'ai choisi de remplacer les balles par des poulets. Ce choix rend l'effet sonore plus cohérent, car le bruit produit à l'impact paraît plus réaliste.                        
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion0" src="Gifs/Projectile.gif" alt="Projectile">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Platforme avec changement de matériau</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû coder une plateforme dont chaque autre plateforme allait hériter.
+                            <br>Lorsque le joueur saute dessus, le matériau de la plateforme change et une particule est également générée.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/PlatformeMat.gif" alt="PlatformMat">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="1_b"><strong>Platforme tombante</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="1_b">
+                    <div class="content">
+                        <div class="content_text">
+                            La plateforme tombante est une plateforme qui, lorsque le joueur saute dessus, attend quelques secondes avant de se briser et de tomber.
+                            <br>Le joueur doit donc réagir rapidement et ne peut pas rester dessus pour réfléchir à sa prochaine action.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/FallPlatform.gif" alt="Fall">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="1_c"><strong>Platforme Convoyeur</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="1_c">
+                    <div class="content">
+                        <div class="content_text">
+                            La plateforme Falling est une plateforme qui, lorsque le joueur saute dessus, attend quelques secondes puis va du point A jusqu'au point B, attend quelque secondes puis revient.
+                            Le mouvement entre les 2 points n'est pas linéaire mais est lente au début, accélere, puis avant d'arriver au 2e point ralentit.
+                            J'ai aussi codé un outil qui m'a beaucoup aidé car il m'a aidé a savoir a l'avance où allait arrivé la platforme et me permettait de bouger les points facilement.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion2" src="Gifs/Conveyor.gif" alt="Conveyor">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="1_d"><strong>Platforme genérateur de chemins</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="1_d">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû créer une plateforme supplémentaire qui n'était pas dans le GDD en concevant son concept de A à Z.
+                            <br>J'ai donc imaginé une plateforme qui, lorsqu'on saute dessus, génère une série de nouvelles plateformes apparaissant avec un léger délai.
+                            <br>Cependant, au fil du temps, ces plateformes rétrécissent progressivement jusqu'à disparaître, rendant le platforming de plus en plus complexe à mesure que le temps passe. 
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/PathGenerator.gif" alt="PathGenerator">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>AI Turret</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû créer une IA qui est une tourelle en utilisant le système de Behaviour Trees d'Unreal Engine 5.
+                            <br>Elle dispose de plusieurs états : un état de patrouille, durant lequel elle surveille son environnement. Si le joueur entre dans son champ de vision, elle passe en état agressif.
+                            <br>En mode agressif, la tourelle commence à tirer sur le joueur. Si ce dernier disparaît de son champ de vision, elle retourne en mode patrouille.
+                            <br>La tourelle possède également un mode inspection : lorsqu’un bruit est généré par l'un des poulets lancés par le joueur, elle se tourne vers la source du bruit pour l'analyser, attend quelques secondes et repasse en mode patrouille.
+                            <br>Lorsque un projectile touche le joueur, il reçoit des dégâts ainsi qu'une poussé en arrière, ce qui peut le faire tomber d'une platforme si il est au bord. 
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/Snake.gif" alt="Snake">
+                                <img class="ImgAccordion2" src="Images/TurretBehaviourTree.png" alt="SnakeBT">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="2"><strong>AI Drone</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="2">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû créer une deuxième IA qui est un drone en utilisant le système de Behaviour Trees d'Unreal Engine 5.
+                            <br>Le drone dispose de plusieurs états: en mode patrouille, il navigue sur la carte en se rendant à des points aléatoires. Si le joueur entre dans son champ de vision, il passe en mode agressif.
+                            <br>En mode agressif, le drone se déplace rapidement vers le joueur et, lorsqu'il l'atteint, il lui inflige des dégâts tout en le repoussant en arrière. Si le joueur disparaît de son champ de vision, le drone retourne en mode patrouille.
+                            <br>Le drone possède également un mode inspection : lorsqu’un bruit est généré par l'un des poulets lancés par le joueur, il se dirige vers la source du bruit pour l'analyser, attend quelques secondes, puis repasse en mode patrouille.                            
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/Drone.gif" alt="Drone">
+                                <img class="ImgAccordion2" src="Images/DroneBehaviourTree.png" alt="DroneBT">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="4"><strong>AI Chèvre</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="4">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû créer une troisième IA qui est une chèvre en utilisant le système de Behaviour Trees d'Unreal Engine 5.
+                            <br>La chèvre dispose de plusieurs états : en mode sommeil, elle n’a aucun champ de vision et ne réagit qu'aux bruits, restant immobile tant qu’aucun son n’est perçu.
+                            <br>Lorsqu'un bruit est généré par l'un des poulets lancés par le joueur, la chèvre se déplace vers la source du bruit. Si, pendant ce déplacement, le joueur entre dans son champ de vision, elle passe en mode agressif.
+                            <br>En mode agressif, la chèvre se met à courir vers le joueur. Si elle percute un mur ou le joueur, elle devient étourdie pendant quelques secondes. 
+                            Une fois l'étourdissement terminé, si le joueur est hors de son champ de vision, elle retourne à son point de départ, sinon, elle charge à nouveau.
+                            <br>Si la chèvre touche le joueur, elle lui inflige des dégâts tout en le repoussant en arrière.                            
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/Goat.gif" alt="Goat">
+                                <img class="ImgAccordion2" src="Images/RusherBehaviourTree.png" alt="RusherBT">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--<ul id="accordion">
+                <li>
+                    <label for="5"><strong>UI</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            hp, pause screen, game over, win screen, titlecard
+                        </div>
+                    </div>
+                </li>
+            </ul>-->
+            <ul id="accordion">
+                <li>
+                    <label for="6"><strong>Checkpoints</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="6">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai également développé un système de checkpoints, bien qu'il n'ait pas été demandé. 
+                            <br>Lorsqu'un joueur atteint un checkpoint et meurt, le jeu se souvient du dernier checkpoint activé, même après le rechargement de la carte.
+                            <br>Et si le joueur entre dans un checkpoint situé avant le dernier activé, celui-ci n'a aucun effet afin d'éviter toute régression dans la progression.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="7"><strong>Vfx & Shaders</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="7">
+                    <div class="content">
+                        <div class="content_text">
+                            Exemples de vfx & shaders que j'ai crée:
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion0" src="Gifs/Bouton.gif" alt="Bouton">
+                                <img class="ImgAccordion0" src="Gifs/PlatformeMat.gif" alt="Platform">
+                                <img class="ImgAccordion0" src="Gifs/Path.gif" alt="Path">
+                                <img class="ImgAccordion0" src="Gifs/GoldenGate.gif" alt="Gate">
+                                <img class="ImgAccordion0" src="Gifs/Chicken.gif" alt="Chicken">
+                                <img class="ImgAccordion0" src="Gifs/Checkpoint.gif" alt="Checkpoint">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="8"><strong>Level Design</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="8">
+                    <div class="content">
+                        <div class="content_text">
+                            Pour ce projet, je devais concevoir un level design d'une durée estimée à 7 minutes. 
+                            <br>Cependant, en pratique, le temps de jeu peut s'étendre jusqu'à 20 minutes, car le joueur doit analyser l'environnement et comprendre les mécaniques du niveau pour progresser.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="9"><strong>Animator</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="9">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai appris à utiliser les Animation Blueprints sur Unreal Engine 5.
+                            <br>J'ai mis en place les animations des IA en utilisant des State Machines pour gérer leurs transitions en fonction de leur état (patrouille, agression, inspection, etc.).
+                            <br>J'ai également utilisé des Blend Spaces pour fluidifier les animations en fonction des déplacements et des accélérations des IA.
+                            <br>Enfin, j’ai intégré les animations du poulet utilisé par le joueur, en veillant à leur bon déclenchement et synchronisation avec les interactions du jeu.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/stkRQBNtZDk?autoplay=1&mute=1&loop=1&playlist=stkRQBNtZDk" frameborder="0" class="GameplayVideo"></iframe>
+            <!--<video controls="" muted="" playsinline="" autoplay="" width="960" height="540" class="GameplayVideo">
+                <source src="03_walkthrough.mp4" type="video/mp4">
+            </video>-->
+        </p>
+        <div class="bottom_space"></div>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="PaperMan.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="PaperMan.js" defer></script>
+        <script src="../../GlobalFiles/TopBannerProject.js" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="gameBg.png" alt="PaperMan">
+        </div>
+        <div class="game_desc">
+            <h1 class="game_title">PaperMan</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université/Game Jam</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Unity, Visual Studio, Git</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage utilisé</strong></td>
+                        <td class="skill_right_text">C#, HLSL/Shader Graph</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">10 sept. 2024 - 14 sept. 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                PaperMan est un jeu fait sur unity pour une game jam organisée par mon école Isart Digital sur le thème des fakes news et des IA. 
+                Chaque élève avait 3 jours pour réfléchir à leur idée de jeu, puis au bout des 3 jours des groupes était formé autour de l'idée d'une des personnes du groupe.
+                Nous avions ensuite 4 jours pour pouvoir créer l'entièreté du jeu. Nous étions 3 game programmeurs, 2 game designers, 1 music designer et 4 game artist, et mon role était d'être game programmeur.
+            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Inspection objets</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai recrée une fenêtre d'inspection d'objets 3d qui affiche un objet que le joueur peut tourner en 3d. 
+                            <br><br>
+                            <div class="ImgContainer">
+                                <img class="Img60" src="Gifs/Inspection.gif" alt="inspectionGif">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="2"><strong>Analog Shader</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="2">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai recrée un effet de shader qui simule un effet analogue. Elle marche sur un fond blanc mais aussi sur des vidéos.
+                            <br><br>
+                            <div class="ImgContainer">
+                                <img class="Img30" src="Gifs/VHS_Shader.gif" alt="vhs_shader">
+                                <img class="Img40" src="Gifs/VHS_Shader_White.gif" alt="vhs_shader_white">
+                            </div>
+                            <br>
+
+                            J'ai aussi crée une animation lorsque la télé s'éteint.
+                            <br><br>
+                            <div class="ImgContainer">
+                                <img class="Img40" src="Gifs/VHS_Close_Anim.gif" alt="vhs_vlose_anim">
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>Vfx</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai recréé un vfx de feu en utilisant les vfx shader graph.
+                            <br><br>
+                            <div class="ImgContainer">
+                                <img class="Img40" src="Gifs/FireVfx.gif" alt="FireVfx">
+                            </div>
+                            <br>
+
+                            J'ai recréé un effet de particle quand le joueur atterrit sur le sol en utilisant les particles system mais aussi une trainée de particules quand il marche.
+                            <br><br>
+                            <div class="ImgContainer">
+                                <img class="Img30" src="Gifs/PlayerPoufParticle.gif" alt="pouf">
+                                <img class="Img40" src="Gifs/PlayerWalkingParticle.gif" alt="walkingParticle">
+                            </div>
+
+                            J'ai recréé un effet de boite en carton qui se casse en particle system.
+                            <br><br>
+                            <div class="ImgContainer">
+                                <img class="Img60" src="Gifs/WoodParticle.gif" alt="boxParticle">
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="4"><strong>Interface Dynamique</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="4">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé un système qui change dynamiquement l'UI du jeu en fonction de si le joueur utilise un clavier souris ou une manette.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/L25Bizf91eY?autoplay=1&mute=1&loop=1&playlist=L25Bizf91eY" frameborder="0" class="GameplayVideo"></iframe>
+        </p>
+        <div class="bottom_space"></div>
+    </body>
+</html>

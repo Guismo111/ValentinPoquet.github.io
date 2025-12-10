@@ -7,34 +7,15 @@
         <link rel="stylesheet" href="Portfolio.css">
         <link rel="stylesheet" href="GameSquare.css">
         <script src="Javascript.js" defer></script>
+        <script src="GlobalFiles/TopBanner.js" defer></script>
     </head>
     <body>
-        <div class="top_banner">
-            <h1 class="top_banner_text">Valentin POQUET</h1>
-
-            <div class="logo-container">
-                <a href="mailto:poquet.valentin91@gmail.com">
-                    <img class="Mail-Logo_top" src="Logos/Mail_Logo.png" alt="Mail" />
-                </a>
-                <a href="https://www.linkedin.com/in/valentin-poquet-319005265/" target=”_blank”>
-                    <img class="LinkedIn-Logo_top" src="Logos/LinkedIn_Logo.png" alt="LinkedIn" />
-                </a>
-                <a href="https://github.com/Guismo111" target=”_blank”>
-                    <img class="Github-Logo_top" src="Logos/Github_Logo.png" alt="Github" />
-                </a>
-            </div>
-            
-            <a href="" class="top_banner_link"><div class="top_banner_text_link">Portfolio</div></a>
-            <!--<a href="" class="top_banner_link"><div class="top_banner_text_link">Contact</div></a>-->
-            <!--<a href="https://www.linkedin.com/in/valentin-poquet-319005265/" target=”_blank”>
-                <img class="settings_logo" src="Logos/Settings_Logo.png" alt="Settings" />
-            </a>-->
-        </div>
+        <div id="header"></div>
         <div class="top_banner_margin"></div>
         <!--<h1 class="main_title">Gameplay Developper</h1>-->
         <div class="video_bg">
             <video class="video_game_bg" autoplay muted loop playsinline>
-                <source src="allProjects.mp4" type="video/mp4">
+                <source src="allProjects.mp4#t=18" type="video/mp4" data-second="15">
             </video>
             <img class="overlay-image" src="degrade.png" alt="overlay">
             <div class="main_title_video">Valentin Poquet</div>
@@ -59,7 +40,7 @@
             <!--Atom Fusion-->
             <div class="square">
                 <div class="image_container">
-                    <a href="Games/AtomFusion/AtomFusion.html">
+                    <a href="Projects/AtomFusion/AtomFusion.html">
 
                         <img class="square-image" src="MainProjectsImg/AtomFusion.png" alt="Atom Fusion" />
 
@@ -97,7 +78,7 @@
             <!--Adventure-->
             <div class="square">
                <div class="image_container">
-                   <a href="Games/UnseelieCourt/UnseelieCourt.html">
+                   <a href="Projects/UnseelieCourt/UnseelieCourt.html">
                        <img class="square-image" src="MainProjectsImg/UnseelieCourtLogo.png" alt="UnseelieCourtLogo" />
 
                        <!-- Vidéo hover -->
@@ -131,7 +112,7 @@
             <!--Paper Man-->
             <div class="square">
                <div class="image_container">
-                   <a href="Games/PaperMan/PaperMan.html">
+                   <a href="Projects/PaperMan/PaperMan.html">
                        <img class="square-image" src="MainProjectsImg/PaperMan.jpg" alt="PaperMan" />
 
                        <!-- Vidéo hover -->
@@ -168,7 +149,7 @@
             <!--Happy Bites-->
             <div class="square">
                 <div class="image_container">
-                    <a href="Games/HappyBites/HappyBites.html">
+                    <a href="Projects/HappyBites/HappyBites.html">
                         <img class="square-image" src="MainProjectsImg/HappyBites.png" alt="HappyBites" />
 
                         <!-- Vidéo hover -->
@@ -202,7 +183,7 @@
             <!--Rush-->
             <div class="square">
                 <div class="image_container">
-                    <a href="Games/Rush/Rush.html">
+                    <a href="Projects/Rush/Rush.html">
                         <img class="square-image" src="MainProjectsImg/Rush.png" alt="Rush" />
 
                         <!-- Vidéo hover -->
@@ -236,7 +217,7 @@
             <!--Paper Shooter-->
             <div class="square">
                 <div class="image_container">
-                    <a href="Games/PaperShooter/PaperShooter.html">
+                    <a href="Projects/PaperShooter/PaperShooter.html">
                         <img class="square-image" src="MainProjectsImg/PaperShooter.png" alt="Paper Shooter" />
 
                         <!-- Vidéo hover -->
@@ -272,7 +253,7 @@
             <!--Procedural System-->
             <div class="square">
                 <div class="image_container">
-                    <a href="OtherProjects/ProceduralSolarSystem/ProceduralSolarSystem.html">
+                    <a href="Projects/ProceduralSolarSystem/ProceduralSolarSystem.html">
                         <img class="square-image" src="MainProjectsImg/ProceduralSolarSystem.png" alt="Moon" />
 
                         <!-- Vidéo hover -->
@@ -318,7 +299,7 @@
             <!--
             <div class="square">
                <div class="image_container">
-                   <a href="Games/Passworld/Passworld.html">
+                   <a href="Projects/Passworld/Passworld.html">
                        <img class="square-image" src="MainProjectsImg/Passworld.png" alt="Passworld" />
                        <div class="square_text_container">
                            <div class="square_text">Passworld</div>
@@ -348,7 +329,7 @@
             <!--
             <div class="square">
                <div class="image_container">
-                   <a href="Games/UnseelieCourt/UnseelieCourt.html">
+                   <a href="Projects/UnseelieCourt/UnseelieCourt.html">
                        <img class="square-image" src="MainProjectsImg/UnseelieCourtLogo.png" alt="ProjetVR" />
                        <div class="square_text_container">
                            <div class="square_text">Projet VR</div>
@@ -377,7 +358,7 @@
             <!--Floor is Lava-->
             <div class="square">
                <div class="image_container">
-                   <a href="Games/FloorIsLava/FloorIsLava.html">
+                   <a href="Projects/FloorIsLava/FloorIsLava.html">
                        <img class="square-image" src="MainProjectsImg/FloorIsLava.png" alt="FloorIsLava" />
 
                        <!-- Vidéo hover -->
@@ -414,7 +395,7 @@
             <!--Tower Defense-->
             <div class="square">
                <div class="image_container">
-                   <a href="Games/ProjetSwitch/ProjetSwitch.html">
+                   <a href="Projects/ProjetSwitch/ProjetSwitch.html">
                        <img class="square-image" src="MainProjectsImg/ProjetSwitch.png" alt="Tower Defense" />
                        <div class="square_text_container">
                            <div class="square_text">Projet Switch</div>
@@ -445,7 +426,7 @@
             <!--Cocoban-->
             <div class="square">
                 <div class="image_container">
-                    <a href="Games/Cocoban/Cocoban.html">
+                    <a href="Projects/Cocoban/Cocoban.html">
                         <img class="square-image" src="MainProjectsImg/Cocoban.png" alt="Cocoban" />
 
                         <!-- Vidéo hover -->
@@ -501,7 +482,7 @@
             <!--Motus-->
             <div class="square">
                 <div class="image_container">
-                    <a href="Games/Motus/Motus.html">
+                    <a href="Projects/Motus/Motus.html">
                         <img class="square-image" src="MainProjectsImg/Motus.jpg" alt="Motus" />
                         <!-- Vidéo hover -->
                         <video class="square-video" muted preload="auto">
@@ -525,7 +506,7 @@
             <!--Game Of Life-->
             <div class="square">
                 <div class="image_container">
-                    <a href="OtherProjects/GameOfLife/GameOfLife.html">
+                    <a href="Projects/GameOfLife/GameOfLife.html">
                         <img class="square-image" src="MainProjectsImg/GameOfLife.png" alt="GameOfLife" />
 
                         <!-- Vidéo hover -->
@@ -594,7 +575,7 @@
             <!--Terebron-->
             <div class="square">
                 <div class="image_container">
-                    <a href="ProfessionnalProjects/Terebron/Terebron.html">
+                    <a href="Projects/Terebron/Terebron.html">
                         <img class="square-image" src="MainProjectsImg/Terebron.jpg" alt="Terebron" />
                         <div class="square_text_container">
                             <div class="square_text">Terebron</div>
@@ -622,7 +603,7 @@
             <!--Anazir-->
             <div class="square">
                 <div class="image_container">
-                    <a href="ProfessionnalProjects/Anazir/Anazir.html">
+                    <a href="Projects/Anazir/Anazir.html">
                         <img class="square-image" src="MainProjectsImg/Anazir.png" alt="Anazir" />
                         <div class="square_text_container">
                             <div class="square_text">Anazir</div>
@@ -655,21 +636,5 @@
             </div>
             <div class="space_professionel"></div>
         </div>
-        <!--Bottom line-->
-        <!--
-        <div class="section_banner">
-            <div class="logo-container">
-                <a href="mailto:poquet.valentin91@gmail.com">
-                    <img class="Mail-Logo" src="Logos/Mail_Logo.png" alt="Mail" />
-                </a>
-                <a href="https://www.linkedin.com/in/valentin-poquet-319005265/" target=”_blank”>
-                    <img class="logo" src="Logos/LinkedIn_Logo.png" alt="LinkedIn" />
-                </a>
-                <a href="https://github.com/Guismo111" target=”_blank”>
-                    <img class="Github-Logo" src="Logos/Github_Logo.png" alt="Github" />
-                </a>
-            </div>
-        </div>
-        -->
     </body>
 </html>

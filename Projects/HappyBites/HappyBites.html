@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="HappyBites.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="HappyBites.js" defer></script>
+        <script src="../../GlobalFiles/TopBannerProject.js" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="gameBg.jpg" alt="HappyBites">
+        </div>
+        <div class="game_desc">
+            <h1 class="game_title">Happy Bites</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Unity, Visual Studio, Git</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage utilisé</strong></td>
+                        <td class="skill_right_text">C#</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">Jan. 2023 - Mars 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Happy Bites est un jeu vidéo 2D de type platformer. Vous incarnez un homme-cookie dans un monde sucré qui a pour but d'aller à une soirée au fin fond de la forêt.
+                Ce projet a été réalisé sur Unity en 2 mois et demi et nous étions une équipe de 4 game designer & programmer, de 2 sound designer et de 7 game artists.
+            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Intéractions</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            <b class="InsideAccordionText">Tourniquet</b><br>
+                            J'ai codé le tourniquet qui a besoin d'étre tourné à une vitesse suffisament élevée pour pouvoir faire passer le joueur. <br>
+                            J'ai aussi codé le fait que la vitesse de rotation du tourniquet dépend de où le joueur applique une force, donc plus le joueur applique une force éloignée depuis le centre du tourniquet, plus le tourniquet tournera vite.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img50" src="TurnstileGif.gif" alt="TurnstileGif">
+                            </div><br>
+                            <b class="InsideAccordionText">Flan</b><br>
+                            J'ai codé les flans qui permettent au joueur d'être propulsé dans différentes directions.<br>
+                            J'ai aussi codé le fait de pouvoir modifier de si le joueur peut encore être contrôlé pendant qu'il est propulsé dans les airs, mais aussi le fait que le joueur se "téléporte" sur le flan au moment où il touche un flan au cas où le joueur n'est pas placé correctement dans certaines situations de level design.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img30" src="flan.gif" alt="TurnstileGif">
+                            </div><br>
+                            <b class="InsideAccordionText">Point de contrôle</b><br>
+                            J'ai codé le point de contrôle qui permet au joueur de réapparaître lorsqu'il meurt. <br>
+                            J'ai aussi fait en sorte que le joueur réapparaît seulement au point de contrôle le plus avancé du jeu et non par rapport au dernier qu'il a activé.
+                            <br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="2"><strong>Level Design</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="2">
+                    <div class="content">
+                        <div class="content_text">
+                            Mon équipe et moi devions implémenter 2 niveaux dans la totalité du jeu. <br>
+                            Nous avions décidé que le premier niveau serait rapide et dynamique mais nous voulions un deuxième niveau un peu plus lent et où le joueur devait un peu plus réfléchir.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img35" src="LD_Images/LD_Lv1_06.png" alt="LD">
+                                <img class="Img35" src="LD_Images/LD_Lv2_02.png" alt="LD">
+                                <img class="Img35" src="LD_Images/LD_Lv2_04.png" alt="LD">
+                                <img class="Img35" src="LD_Images/LD_Lv2_05.png" alt="LD">
+                                <img class="Img35" src="LD_Images/LD_Lv2_06.png" alt="LD">
+                                <img class="Img35" src="LD_Images/LD_Lv2_End.png" alt="LD">
+                            </div>    
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>Juiciness</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai ajouté des effets aux crocodiles, aux tourniquets, aux biscuits, au flan lorsqu'ils sortent de l'eau et au joueur en plus des visuels du jeu afin de rajouter de la juiciness et de l'immersion.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img50" src="Juiciness/crocodiles1.gif" alt="LD">
+                                <img class="Img20" src="Juiciness/crocodiles3.gif" alt="LD">
+                                <img class="Img20" src="Juiciness/crocodiles3.gif" alt="LD">
+                                <img class="Img25" src="Juiciness/player.gif" alt="LD">
+                                <img class="Img25" src="Juiciness/FlambyEauGif.gif" alt="LD">
+                                <img class="Img30" src="Juiciness/stompPlatform.gif" alt="LD">
+                                <img class="Img30" src="Juiciness/turnstile.gif" alt="LD">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="4"><strong>UI Animations</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="4">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé les animations de transition entre les écrans ainsi que l'écran de chargement lorsque l'on rentre dans des niveaux.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img50" src="UIAnimations/ChocolateTransition.gif" alt="UI_Anim">
+                            </div><br>
+                            J'ai aussi codé le fait que lorsque que le joueur place son curseur sur les boutons, ils grossissent et rétrécissent, ainsi qu'une animation des boutons lorsqu'ils apparaissent.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img25" src="UIAnimations/LastCheckPointGif.gif" alt="UI_Anim">
+                                <img class="Img50" src="UIAnimations/BtnsSpawn.gif" alt="UI_Anim">
+                            </div><br>
+                            J'ai aussi codé la sélection des profils du joueur ainsi que la sélection des niveaux, j'ai aussi fait en sorte que lorsque le joueur change de niveau lors de la sélection le fond change.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img50" src="UIAnimations/ProfileSelector.gif" alt="UI_Anim">
+                                <img class="Img50" src="UIAnimations/LevelSelector.gif" alt="UI_Anim">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="5"><strong>Joueur</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé le joueur et j'ai ajouté une accélération et une décélération lorsque le joueur se déplace.<br>
+                            J'ai aussi fait en sorte que l'on puisse régler le saut et qu'il puisse descendre plus vite que lorsqu'il monte dans les airs.<br>
+                            J'ai aussi codé le fait que si le joueur appuie sur le bouton de saut lègèrement avant de toucher le sol, il puisse sauter dès qu'il touche le sol.<br>
+                            J'ai aussi fait en sorte que si le joueur appuie sur le bouton saut alors qu'il vient de descendre d'une platforme, il a un court temps pour pouvoir sauter.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="6"><strong>Parallax</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="6">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé la parallax qui est un effet de défilement sur le fond pour donner un effet de profondeur et de réalisme.<br>
+                            On peut y ajouter autant de fond que l'on veut et y changer la vitesse de déplacement horizontale facilement.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="7"><strong>Camera & Tool</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="7">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé la caméra qui suit le joueur, j'ai ajouté une fonction qui permet a la camera de suivre ou non le joueur lorsqu'il saute.<br>
+                            J'ai aussi fait en sorte que la camera puisse aller plus vite ou moins vite le joueur, ainsi que un mode cinématique qui me permet de jouer des cinématiques.<br>
+                            J'ai aussi créé un outil qui lorsque le joueur rentre dans certaines zones invisible, la camera va se déplacer à un endroit fixe et changer son zoom en fonction de la zone.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="Img80" src="CameraZones.png" alt="UI_Anim">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/W1Qb8KtboKo?autoplay=1&mute=1&loop=1&playlist=W1Qb8KtboKo" frameborder="0" class="GameplayVideo"></iframe>
+            <!--<video controls="" muted="" playsinline="" autoplay="" width="960" height="540" class="GameplayVideo">
+                <source src="Walkthrough.mp4" type="video/mp4">
+            </video>-->
+        </p>
+        <div class="bottom_space"></div>
+    </body>
+</html>

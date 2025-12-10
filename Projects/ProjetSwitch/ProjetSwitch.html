@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Valentin POQUET Portfolio</title>
+        <link rel="stylesheet" href="ProjetSwitch.css">
+        <link rel="stylesheet" href="../Project.css">
+        <link rel="stylesheet" href="../../Portfolio.css">
+        <script src="ProjetSwitch.js" defer></script>
+        <script src="../../GlobalFiles/TopBannerProject.js" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="game_bg">
+            <img class="img_game_bg" src="Background.png" alt="Background">
+        </div>
+        <div class="TopSpace"></div>
+        <div class="game_desc">
+            <h1 class="game_title">Projet Switch</h1>
+            <table class="skills_table">
+                <tbody>
+                    <tr>
+                        <td class="skill_left_text"><strong>Type de projet</strong></td>
+                        <td class="skill_right_text">Université</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Applications utilisées</strong></td>
+                        <td class="skill_right_text">Unity, Visual Studio, Git, Procreate</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Langage Utilisé</strong></td>
+                        <td class="skill_right_text">C#</td>
+                    </tr>
+                    <tr>
+                        <td class="skill_left_text"><strong>Période</strong></td>
+                        <td class="skill_right_text">Sep. 2023 - Nov 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about">
+                Ce projet avait pour objectif de nous apprendre à développer un jeu sur Nintendo Switch en utilisant Unity.
+                <br>Nous devions concevoir un jeu de tower defense en 2 mois et demi.
+                <br>Nous étions une équipe de 6 Game Designers & Programmers, et aidé d’un Music Designer et d’un Game Artist pour les assets.
+                <br>Mon rôle principal était celui de Game Designer & Programmer, mais j'ai également contribué à la création des assets graphiques.
+            </div>
+            <div class="space_before_accordion"></div>
+            <ul id="accordion">
+                <li>
+                    <label for="first"><strong>Player Movement</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="first">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai dû recoder les mouvements du joueur tout en les rendant compatibles avec les commandes de la Nintendo Switch.
+                            <br>J'ai également ajouté un effet visuel lors du changement de direction : étant donné que le jeu est en 2D, une animation de rotation du sprite a été intégrée pour renforcer l'immersion et la réactivité du personnage.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion-1" src="Gifs/CharacterMovement.gif" alt="Gif">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="2"><strong>Shader voir a travers</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="2">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai créé un shader permettant au joueur de toujours voir son personnage, même lorsqu'il se déplace derrière des objets.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion-1" src="Gifs/Hole.gif" alt="Gif">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="3"><strong>Gestion des ressources</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="3">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai codé un système permettant au joueur de détruire des ressources, puis de les ramasser au sol.
+                            <br>Pour ajouter de la juiciness, j'ai également implémenté une animation où les ressources jaillissent de l'objet lors de sa destruction, rendant l'interaction plus dynamique et satisfaisante.
+                            <br>J'ai aussi développé un système de gestion des ressources, incluant une limite maximale que le joueur peut collecter.
+                            <br>Enfin, j'ai créé un shader indiquant visuellement au joueur le pourcentage de destruction de la ressource, améliorant ainsi la lisibilité de l'action en temps réel.
+                            <br>J'ai également implémenté un système d'amélioration d'armes : en fonction de l’outil utilisé, certaines ressources peuvent être détruites plus rapidement, ajoutant une progression au gameplay.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion0" src="Gifs/Ressources.gif" alt="Gif">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="5"><strong>Assets</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="5">
+                    <div class="content">
+                        <div class="content_text">
+                            Voici un exemple des assets que j'ai créés pour le jeu.
+                            <br>Ils ont été réalisés sur iPad à l'aide du logiciel ProCreate.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion0" src="Images/Arbre.png" alt="Img0">
+                                <img class="ImgAccordion0" src="Images/Switch_iron.png" alt="Img3">
+                                <img class="ImgAccordion0" src="Images/Switch_cadaver.png" alt="Img2">
+                                <!--<img class="ImgAccordion-2" src="Images/Switch_cadaver - Copie.png" alt="Img1">-->
+                                <img class="ImgAccordion-1" src="Images/Switch_Rock.png" alt="Img4">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="accordion">
+                <li>
+                    <label for="6"><strong>Fireflies</strong><span class="plus">+</span></label>
+                    <input type="checkbox" name="accordion" id="6">
+                    <div class="content">
+                        <div class="content_text">
+                            J'ai recodé un effet de particules simulant des lucioles apparaissant lorsque le cycle de nuit se déclenche.
+                            <br>Ces particules n'apparaissent qu'autour du joueur pour optimiser les performances et renforcer l'immersion.
+                            <br>Lorsque le joueur s'approche d'un groupe de lucioles, celles-ci disparaissent progressivement, ajoutant un effet dynamique et vivant à l’environnement.
+                            <br><br>
+                            <div class="ImgShaderContainer">
+                                <img class="ImgAccordion1" src="Gifs/Fireflies.gif" alt="Gif">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="GameplayVideoContainer">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/2EHyJPMbIC0?autoplay=1&mute=1&loop=1&playlist=2EHyJPMbIC0" frameborder="0" class="GameplayVideo"></iframe>
+        </p>
+        <div class="bottom_space"></div>
+    </body>
+</html>
