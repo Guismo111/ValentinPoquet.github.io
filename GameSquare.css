@@ -77,6 +77,10 @@
     align-items: center;
 }
 
+.square_text_2.square_text{
+    font-size: 4vh;
+}
+
 .work_tags_container{
     margin-top: 1.25vh;
     width: 100%;
