@@ -127,3 +127,17 @@
     align-items: center;
     text-align: center;
 }
+
+.showcaseVideo_60 {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 2.0vh;
+}
+
+.showcaseVideo_80 {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 2.0vh;
+}

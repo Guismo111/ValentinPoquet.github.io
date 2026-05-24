@@ -304,6 +304,12 @@ body{
     object-fit: cover; /* This ensures the image covers the entire container, maintaining its aspect ratio */
 }
 
+.video_game_bg_60 {
+    width: 60%;
+    height: 60%;
+    object-fit: cover; /* This ensures the image covers the entire container, maintaining its aspect ratio */
+}
+
 .main_title_video {
     position: absolute;
     top: 28%;   
